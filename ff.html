@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Sample Text Editor</h1>
+
+    <div class="editor">
+      <div class="controls">
+        <label for="font-family">Font Family:</label>
+        <select id="font-family" class="option-select">
+          <option value="">Select font</option>
+        </select>
+
+        <label for="font-weight">Font Weight:</label>
+        <select id="font-weight" class="option-select">
+          <option value="">Select weight</option>
+        </select>
+
+        <label for="italic-toggle">Italic:</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="italic-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="text-area">
+        <textarea id="editor-text"></textarea>
+      </div>
+
+      <div class="footer">
+        <button id="reset-btn">Reset</button>
+        <button id="save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
